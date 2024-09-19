@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* 전체 레이아웃 설정 */
+body {
+	display: flex;
+	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 네비게이션 바 스타일 */
+.nav {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh; /* 화면 높이에 맞게 전체 네비게이션 고정 */
+}
+
+/* 네비게이션 리스트 스타일 */
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 네비게이션 리스트 항목 스타일 */
+.nav ul li {
+    margin-bottom: 20px;
+}
+
+/* 네비게이션 링크 스타일 */
+.nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    background-color: #E5EAE8;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 링크에 마우스를 올렸을 때 효과 */
+.nav ul li a:hover {
+    background-color: #B8C6CF;;
+    color: white;
+}
+
+/* 홈 화면 링크의 스타일을 더 크게 강조 */
+.nav ul li:first-child a {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #B8C6CF;
+    color: #333;
+}
+
+/* 홈 화면 링크에 마우스를 올렸을 때 */
+.nav ul li:first-child a:hover {
+    background-color: #B8C6CF;
+    color: white;
+}
+
+/* 내용 부분 스타일 (네비게이션 바 옆에 위치) */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow: auto;
+}
+.content th {
+	color: #444444;
+	background-color: #B8C6CF;
+	border-top: 1px solid #231815;
+	border-bottom: 1px solid #231815;
+}
+.content td {
+	border-bottom: 1px solid #231815;
+}
+
+table input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table input[type="submit"] {
+    background-color: #B8C6CF;
+    color: #444444;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table input[type="submit"]:hover {
+    background-color: #E5EAE8;
+    color:#444444;
+}
